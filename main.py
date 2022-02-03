@@ -29,7 +29,7 @@ embedding_dimension = 32
 user_model = Sequential(layers=[
     Embedding(len(unique_user_id) + 1,
               embedding_dimension),
-    Embedding(embedding_dimension + 1, 
+    Embedding(embedding_dimension, 
               embedding_dimension / 2)
 ])
 
@@ -39,7 +39,7 @@ user_model = Sequential(layers=[
 product_model = Sequential(layers=[
     Embedding(len(unique_user_id) + 1,
               embedding_dimension),
-    Embedding(embedding_dimension + 1, 
+    Embedding(embedding_dimension, 
               embedding_dimension / 2)
 ])
 
