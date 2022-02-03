@@ -46,7 +46,7 @@
 
 ## :dart: About ##
 
-Describe your project
+This is a ML model which recommend product to user based on their id 
 
 ## :sparkles: Features ##
 
