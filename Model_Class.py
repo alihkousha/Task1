@@ -1,6 +1,6 @@
 import os
 import tensorflow as tf
-
+from typing import Dict, Text
 
 
 class ClassProductModel(tf.keras.Model):
