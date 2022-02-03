@@ -75,10 +75,12 @@ $ git clone https://github.com/alihkousha/task1
 $ cd task1
 
 # Install dependencies
-$ yarn
+$ pip install tensorflow
+$ pip install pandas
+$ pip install numpy
 
 # Run the project
-$ yarn start
+$ py main.py
 
 # The server will initialize in the <http://localhost:3000>
 ```
