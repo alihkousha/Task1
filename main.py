@@ -30,17 +30,17 @@ user_model = Sequential(layers=[
     Embedding(len(unique_user_id) + 1,
               embedding_dimension),
     Embedding(embedding_dimension, 
-              embedding_dimension / 2)
+              int(embedding_dimension / 2))
 ])
 
 # Candidate Model
 
 
 product_model = Sequential(layers=[
-    Embedding(len(unique_user_id) + 1,
+    Embedding(len(unique_product_id) + 1,
               embedding_dimension),
     Embedding(embedding_dimension, 
-              embedding_dimension / 2)
+              int(embedding_dimension / 2))
 ])
 
 
@@ -89,6 +89,3 @@ model.evaluate(
     cached_test, 
     return_dict=True
     )
-
-with tempfile.TemporaryDirectory() as tmp:
-    pass
